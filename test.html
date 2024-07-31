@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    body {
+        font-family: Arial, sans-serif;
+    }
+    
+    .modal {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 300px;
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
+    
+    .modal-content {
+        padding: 20px;
+    }
+    
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: 10px;
+    }
+    
+    .modal-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: #4CAF50;
+    }
+    
+    .close-button {
+        background: none;
+        border: none;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    
+    .modal-body {
+        display: flex;
+        margin: 20px 0;
+    }
+    
+    .product-image {
+        width: 50px;
+        height: 70px;
+        object-fit: cover;
+        margin-right: 20px;
+    }
+    
+    .product-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .product-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    
+    .product-price {
+        color: #555;
+        margin-top: 5px;
+    }
+    
+    .modal-footer {
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .view-bag-button,
+    .checkout-button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .view-bag-button {
+        background-color: #4CAF50;
+        color: white;
+    }
+    
+    .checkout-button {
+        background-color: #FFA500;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+    <div class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="modal-title">Added to cart</span>
+                <button class="close-button">&times;</button>
+            </div>
+            <div class="modal-body">
+                <img src="book-cover.png" alt="Product Image" class="product-image">
+                <div class="product-details">
+                    <span class="product-title">Let's Pray</span>
+                    <span class="product-price">£12.99</span>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="view-bag-button">View Bag</button>
+                <button class="checkout-button">Checkout</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
